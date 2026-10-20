@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Secrets
+.env
+.env.*
+
+# MLflow local tracking data
+mlruns/
+mlflow.db*
+mlartifacts/
+
+# Raw dataset
+data/
+
+# Include the exported model required by the API and CI
+models/*
+!models/churn_pipeline/
+!models/churn_pipeline/**
+
+# Tests and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors and OS
+.vscode/
+.DS_Store
+Thumbs.db
